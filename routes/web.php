@@ -20,4 +20,7 @@ Route::get('/', function () {
 
 Route::get('/jokes', function () {return view('jokes');})->name('jokes');
 
-Route::get('/pomme', 'RemediationController@index')->name('pomme');
+Route::get('/pomme', 'RemediationController@index', function(){
+
+
+})->name('pomme');
