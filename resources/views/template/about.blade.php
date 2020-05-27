@@ -19,8 +19,27 @@
                         
                         <div class="custom-btn-group mt-4">
                           <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          
                           <a href="{{route('pomme')}}" class="btn custom-btn custom-btn-bg custom-btn-link">Get to the appel</a>
                         </div>
+
+                        <div class="row">
+                            <div class="col-4">            
+                     <a href="{{route('pommeDestroy')}}"> <span class="badge badge-primary mt-5">Destroy</span></a>
+                       <a href="{{route('pommeEdit')}}"> <span class="badge badge-secondary">Edit</span></a>
+                     <a href="{{route('pommeShow')}}">  <span class="badge badge-success">Show</span></a> </div>
+
+<div class="col-8">
+
+                       
+          
+                        <span class="badge badge-danger">Danger</span>
+                        <span class="badge badge-warning">Warning</span>
+                        <span class="badge badge-info">Info</span>
+                        <span class="badge badge-light">Light</span>
+                        <span class="badge badge-dark">Dark</span></div>
+ </div>
+
                     </div>
                 </div>
 

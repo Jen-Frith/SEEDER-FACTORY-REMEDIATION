@@ -20,7 +20,8 @@ Route::get('/', function () {
 
 Route::get('/jokes', function () {return view('jokes');})->name('jokes');
 
-Route::get('/pomme', 'RemediationController@index', function(){
+Route::get('/pomme', 'RemediationController@index', function(){})->name('pomme');
 
-
-})->name('pomme');
+Route::get('/pomme/edit', 'RemediationController@edit', function(){})->name('pommeEdit');
+Route::get('/pomme/show', 'RemediationController@show', function(){})->name('pommeShow');
+Route::get('/pomme/destroy', 'RemediationController@destroy', function(){})->name('pommeDestroy');
