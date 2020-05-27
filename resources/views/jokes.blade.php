@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
-<div class="container">
+@include('template/header')
+<div class="container mt-5">
 <small class="small-text">Clash drôle par : GIAN-MARCO Le 07/03/2020 à 22:29</small>
 <p>Sur la plage, une femme dit à sa copine :
 

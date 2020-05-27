@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 
 Route::get('/jokes', function () {return view('jokes');})->name('jokes');
+
+Route::get('/pomme', 'RemediationController@index')->name('pomme');
