@@ -27,14 +27,15 @@
                             <div class="col-4">            
                      <a href="{{route('pommeDestroy')}}"> <span class="badge badge-primary mt-5">Destroy</span></a>
                        <a href="{{route('pommeEdit')}}"> <span class="badge badge-secondary">Edit</span></a>
-                     <a href="{{route('pommeShow')}}">  <span class="badge badge-success">Show</span></a> </div>
+                     <a href="{{route('pommeShow')}}">  <span class="badge badge-success mr-3">Show</span></a>
 
-<div class="col-8">
+                     <a href="{{route('user.create')}}"> <span class="badge badge-danger">User Create</span></a>
+                     <a href="{{route('user.show')}}"><span class="badge badge-warning">User Show</span></a>   
+ </div>
+ <div class="col-8">
 
                        
           
-                        <span class="badge badge-danger">Danger</span>
-                        <span class="badge badge-warning">Warning</span>
                         <span class="badge badge-info">Info</span>
                         <span class="badge badge-light">Light</span>
                         <span class="badge badge-dark">Dark</span></div>

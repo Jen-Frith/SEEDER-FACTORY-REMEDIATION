@@ -25,3 +25,8 @@ Route::get('/pomme', 'RemediationController@index', function(){})->name('pomme')
 Route::get('/pomme/edit', 'RemediationController@edit', function(){})->name('pommeEdit');
 Route::get('/pomme/show', 'RemediationController@show', function(){})->name('pommeShow');
 Route::get('/pomme/destroy', 'RemediationController@destroy', function(){})->name('pommeDestroy');
+
+
+Route::get('/user/create', 'PostController@create',function(){})->name('user.create');
+Route::post('/user/store', 'PostController@store',function(){})->name('user.store');
+Route::get('/user/show', 'PostController@show',function(){})->name('user.show');
