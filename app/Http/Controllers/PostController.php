@@ -22,10 +22,7 @@ $post->text=request('text');
 
 $post->save();
 
-
-
-    echo('votre demande a bien été traité');
-
+return view('welcome');
 
 }
 
@@ -36,9 +33,28 @@ $posts=Post::all();
 
 return view ('user.show', compact('posts'));
 
+}
 
+public function edit($id){
+
+$post=Post::find($id);
+return view ('user.edit', compact('post'));
 
 }
+
+public function update(Request $request, $id){
+
+$post=Post::find($id);
+
+$post->title=request('title');
+$post->text=request('text');
+
+$post->save();
+
+return redirect()->route('user.show');
+
+}
+
 
 
 

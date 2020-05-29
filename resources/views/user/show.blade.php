@@ -17,7 +17,9 @@
             <th scope="row">{{$post->id}}</th>
             <td>{{$post->title}}</td>
             <td>{{$post->text}}</td>
-            <td>Settings</td>
+            <td>
+            <a href="{{route('user.edit', $post->id)}}">  <button class="btn bg-warning"> Editer</button></a> 
+            </td>
         </tr>
         @endforeach
      
