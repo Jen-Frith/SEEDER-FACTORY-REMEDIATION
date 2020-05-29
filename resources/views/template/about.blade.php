@@ -30,13 +30,15 @@
                      <a href="{{route('pommeShow')}}">  <span class="badge badge-success mr-3">Show</span></a>
 
                      <a href="{{route('user.create')}}"> <span class="badge badge-danger">User Create</span></a>
-                     <a href="{{route('user.show')}}"><span class="badge badge-warning">User Show</span></a>   
+                     <a href="{{route('user.show')}}"><span class="badge badge-warning">User Show</span></a>   <br>
+
+                    <a href="{{route('book.index')}}"><span class="badge badge-info p-3 mt-3">Book</span></a>
+
  </div>
  <div class="col-8">
 
                        
           
-                        <span class="badge badge-info">Info</span>
                         <span class="badge badge-light">Light</span>
                         <span class="badge badge-dark">Dark</span></div>
  </div>
