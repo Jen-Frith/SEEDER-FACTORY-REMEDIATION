@@ -56,6 +56,14 @@ return redirect()->route('user.show');
 }
 
 
+public function destroy($id){
 
+    $post=Post::find($id);
+
+    $post->delete();
+
+    return redirect()->back();
+
+}
 
 }

@@ -32,3 +32,4 @@ Route::post('/user/store', 'PostController@store',function(){})->name('user.stor
 Route::get('/user/show', 'PostController@show',function(){})->name('user.show');
 Route::get('/user/edit/{id}', 'PostController@edit',function(){})->name('user.edit');
 Route::post('/user/update/{id}', 'PostController@update',function(){})->name('user.update');
+Route::delete('/user/destroy/{id}', 'PostController@destroy',function(){})->name('user.destroy');

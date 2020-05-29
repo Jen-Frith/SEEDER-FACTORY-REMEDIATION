@@ -19,7 +19,13 @@
             <td>{{$post->text}}</td>
             <td>
             <a href="{{route('user.edit', $post->id)}}">  <button class="btn bg-warning"> Editer</button></a> 
-            </td>
+          <form action="{{route('user.destroy', $post->id)}}" method="POST">
+          @method('delete')
+          @csrf
+           <button class="btn bg-danger" type="submit"> Delete</button>
+
+          </form>
+          </td>
         </tr>
         @endforeach
      
